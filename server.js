@@ -7,13 +7,25 @@ const server = http.createServer((req, res) => {
   // set header content type
   res.setHeader('Content-type', 'text/html');
 
-  // send html
-  fs.readFile('./views/index.html', (err, data) => {
+  let path = './views/';
+  switch(req.url) {
+    case '/':
+      path += 'index.html';
+      break;
+    case '/about':
+      path += 'about.html';
+      break;
+    default:
+      path += '404.html';
+      break;
+  }
+
+  // send html files
+  fs.readFile(path, (err, data) => {
     if(err) {
       console.log(err);
       res.end();
     } else {
-      // res.write(data);
       res.end(data);
     }
   });
