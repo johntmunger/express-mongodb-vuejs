@@ -1,11 +1,18 @@
 const express = require('express');
-const { red } = require('color-name');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
 // invoke instance of express
 const app = express();
 
+// middleware
+app.use(bodyParser.json());
+app.use(cors());
+
+const port = process.env.PORT || 3000;
+
 // listen for requests
-app.listen(3000);
+app.listen(port, () => console.log(`Server started on port ${port}`));
 
 app.get('/', (req, res) => {
   // res.send('<p>home page</p>'); // plain text
