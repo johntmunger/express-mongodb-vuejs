@@ -37,4 +37,4 @@ npm run build
 
 ## Contact information
 
-If there any questions about the project or for any coding explanations, I can be reached at johntmunger@gmail.com. Thank you for the opportunity and your time.
+If there any questions about the project or for any coding explanations, I can be reached at johntmunger@gmail.com.
