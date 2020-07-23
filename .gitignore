@@ -5,4 +5,4 @@
 node_modules
 
 # Ignore the entire client directory
-/client
+/client/node_modules
