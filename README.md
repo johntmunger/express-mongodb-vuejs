@@ -20,12 +20,6 @@ cd client
 npm run dev
 ```
 
-Start Vue DevServer: http://localhost:8080
-```
-cd client
-npm run dev
-```
-
 Build for production (Will build into server/public, ready for deployment)
 ```
 cd client
@@ -37,4 +31,4 @@ npm run build
 
 ## Contact information
 
-If there any questions about the project or for any coding explanations, I can be reached at johntmunger@gmail.com.
+If there any questions about the project I can be reached at johntmunger@gmail.com.
